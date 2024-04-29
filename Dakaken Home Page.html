@@ -2,7 +2,27 @@
 <html>
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  
+  
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Sans+Arabic:wght@100..900&display=swap"
+    rel="stylesheet">
+
+
+  <!--------------- fontawsome ------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -44,19 +64,19 @@
             </div>
         </div>
 
-        <div id="logo_header" class="row align-items-center justify-content-center mt-2">
-            <div class="col-md-3 col-sm-12  text-center">
+        <div id="logo_header" class="container row align-items-center justify-content-center mt-2">
+            <div class="col-6 col-md-3 order-1 order-md-1 text-center">
                 <img id="logo" src="images/logo.svg" class="img-fluid" />
             </div>
-            <div class="col-4 col-sm-5 ">
+            <div class="col-12 col-md-4 order-3 order-md-2">
                 <div class="row">
                     <div class="col-12">
                         <div class="row align-items-center h-auto">
-                            <div class="col-10 gx-0">
+                            <div class="col-9 gx-0">
                                 <img id="search_bar_img" src="images/search.svg" class="img-fluid" />
                                 <input id="search_bar" type="search" class="form-control" />
                             </div>
-                            <div class="col-2 p-0 text-center dropdown show">
+                            <div class="col-3 p-0 text-center dropdown show">
                                 <a class="arrow_down w-100" href="#" role="button" id="dropdownMenuLink"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <div class="arrow_down">
@@ -98,7 +118,8 @@
 
                 </div>
             </div>
-            <div class="col-5 col-sm-4 d-flex  justify-content-between align-items-center dropdown show">
+            <div
+                class="col-6 col-md-5 order-2 order-md-3 d-flex justify-content-between align-items-center dropdown show">
 
                 <div class="col-8 d-flex justify-content-end">
                     <div class="row flex-nowrap">
@@ -276,9 +297,9 @@
             </ul>
         </div>
 
-        <div class="row justify-content-between mt-3">
-            <div id="place_holder_1" class="col-2"></div>
-            <div class="col-8 d-flex justify-content-center">
+        <div class="row justify-content-center mt-3">
+            <div id="place_holder_1" class="col-1"></div>
+            <div class="col-10 d-flex flex-grow justify-content-center">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false">
                     <ol class="carousel-indicators d-flex pt-5">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -298,409 +319,393 @@
                     </div>
                 </div>
             </div>
-            <div id="place_holder_2" class="col-2"></div>
+            <div id="place_holder_2" class="col-1"></div>
         </div>
 
         <div class="row justify-content-around mx-1 mt-3">
-          
-            <div class="d-flex mb-4 mt-4 justify-content-between ">
 
-                
-<div class="">
-    <button class=" carousel_arrow  prev-btn">
-        <span class="carousel-control-prev-icon "></span>
-
-    </button>
-    <button class=" carousel_arrow next-btn active mx-5 ">
-        <span class="carousel-control-next-icon "></span>
-
-    </button>    
-</div>
-<p>جميع الاقسام</p>       
+            <div class=" d-flex justify-content-between px-4 my-4 ">
+                <div id="slider_1" class="d-sm-none  ">
+                    <button  class="prev-btn"><i class="fas fa-arrow-left"></i></button>
+                    <button  class="active next-btn active mx-4"><i class="fas fa-arrow-right"></i></button>
+        
+                </div>
+                <p class="titles" dir="rtl" lang="ar">جميع الاقسام </p>
             </div>
 
-            
             <div class="slider-container ">
                 <div id="sections_columns" class="col-1 w-auto text-center">
                     <a id="arabic_categories" dir="rtl" lang="ar" class="nav-link" href="#">
                         <img src="images/home_furniture.svg" class="img-fluid" />
-                       
+
                     </a>
-                   <p dir="rtl" lang="rtl"> الأثاث المنزلي</p>
+                    <p dir="rtl" lang="rtl"> الأثاث المنزلي</p>
                 </div>
                 <div id="sections_columns" class="col-1 w-auto text-center">
                     <a id="arabic_categories" dir="rtl" lang="ar" class="nav-link" href="#">
                         <img src="images/games_and_entertainment.svg" class="img-fluid" />
-                      
+
                     </a>
-                     <p dir="rtl" lang="rtl">الالعاب والترفيه</p>
+                    <p dir="rtl" lang="rtl">الالعاب والترفيه</p>
                 </div>
                 <div id="sections_columns" class="col-1 w-auto text-center">
                     <a id="arabic_categories" dir="rtl" lang="ar" class="nav-link" href="#">
                         <img src="images/craft_supplies_and_tools.svg" class="img-fluid" />
-            
+
                     </a>
-                    <p dir="rtl" lang="rtl">  اللوازم والأدوات الحرفية</p>
+                    <p dir="rtl" lang="rtl"> اللوازم والأدوات الحرفية</p>
                 </div>
                 <div id="sections_columns" class="col-1 w-auto text-center">
                     <a id="arabic_categories" dir="rtl" lang="ar" class="nav-link" href="#">
                         <img src="images/art_and_collectibles.svg" class="img-fluid" />
-              
+
                     </a>
-                    <p dir="rtl" lang="rtl">     الفن والمقتنيات</p>
+                    <p dir="rtl" lang="rtl"> الفن والمقتنيات</p>
                 </div>
                 <div id="sections_columns" class="col-1 w-auto text-center">
                     <a id="arabic_categories" dir="rtl" lang="ar" class="nav-link" href="#">
                         <img src="images/wedding_and_parties.svg" class="img-fluid" />
-                      
+
                     </a>
-                    <p dir="rtl" lang="rtl">     الزفاف والحفلات</p>
+                    <p dir="rtl" lang="rtl"> الزفاف والحفلات</p>
                 </div>
                 <div id="sections_columns" class="col-1 w-auto text-center">
                     <a id="arabic_categories" dir="rtl" lang="ar" class="nav-link" href="#">
                         <img src="images/skin_care.svg" class="img-fluid" />
-                     
+
                     </a>
-                    <p dir="rtl" lang="rtl">       العناية بالبشرة</p>
+                    <p dir="rtl" lang="rtl"> العناية بالبشرة</p>
                 </div>
                 <div id="sections_columns" class="col-1 w-auto text-center">
                     <a id="arabic_categories" dir="rtl" lang="ar" class="nav-link" href="#">
                         <img src="images/accessories_and_jewelry.svg" class="img-fluid" />
-                    
+
                     </a>
-    
-                    <p dir="rtl" lang="rtl">        اكسسوارات ومجوهرات</p>
+
+                    <p dir="rtl" lang="rtl"> اكسسوارات ومجوهرات</p>
                 </div>
                 <div id="sections_columns" class="col-1 w-auto text-center">
                     <a id="arabic_categories" dir="rtl" lang="ar" class="nav-link" href="#">
                         <img src="images/shoes_and_clothes.svg" class="img-fluid" />
-                     
+
                     </a>
-                    <p dir="rtl" lang="rtl">      الأحذية والملابس</p>
+                    <p dir="rtl" lang="rtl"> الأحذية والملابس</p>
                 </div>
             </div>
-           
+
         </div>
 
         <div class="row flash_sale margin_top_100 justify-content-around align-items-center py-5">
-            <div class="d-flex justify-content-between">
-
-                <div class="d-flex  ">
-
-                    <button class=" carousel_arrow  prev-btn">
-                        <span class="carousel-control-prev-icon "></span>
-
-                    </button>
-                    <button class=" carousel_arrow next-btn active mx-5 ">
-                        <span class="carousel-control-next-icon "></span>
-
-                    </button>
+            <div class=" d-flex justify-content-between px-5">
+                <div id="slider_2" class="d-sm-flex  ">
+                    <button  class="prev-btn"><i class="fas fa-arrow-left"></i></button>
+                    <button  class="active next-btn active mx-4"><i class="fas fa-arrow-right"></i></button>
+        
                 </div>
                 <p class="titles" dir="rtl" lang="ar">الأحذية والملابس</p>
             </div>
-            <div class="col-8">
-                <div class="carousel slide">
+            <div class="d-flex gap-3  flash_sale_sections ">
+                <div class="col-8">
+        
+                                <div class="slider-container">
+                                    <div class="row flex-nowrap justify-content-between mt-2 mb-2 mx-3 ">
+                                        <div class="col-4    ">
+                                            <div class="card w-auto card_style" style="max-width: 17rem;">
+                                                <a class="nav-link" href="#">
+                                                    <img src="images/product_img.svg"
+                                                        class="card-img-top img-fluid px-3 pt-3 card_img" alt="...">
+                                                </a>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <img src="images/star.svg" class="" />
+                                                            <p class="card_product_rating">4.5</p>
+                                                        </div>
+                                                        <div class="col-6 text-end">
+                                                            <p dir="rtl" lang="ar" class="card-title card_product_name">
+                                                                اسم
+                                                                المنتج
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p class="card_product_price">1,725 EGP</p>
+                                                        </div>
+                                                        <div class="col-6 d-flex justify-content-end">
+                                                            <p class="card_product_discount">20% OFF</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-3 px-2">
+                                                            <a class="btn btn-primary card_wish_list_btn" href="#">
+                                                                <img src="images/add_to_wish_list_heart.svg" class="" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-9 d-flex align-items-center">
+                                                            <a dir="rtl" lang="ar"
+                                                                class="btn btn-primary orange_button_white_text w-100"
+                                                                style="min-height: 39px; text-align: right;"
+                                                                href="#">اضافة
+                                                                للعربه</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4   ">
+                                            <div class="card w-auto card_style" style="max-width: 17rem;">
+                                                <a class="nav-link" href="#">
+                                                    <img src="images/product_img.svg"
+                                                        class="card-img-top img-fluid px-3 pt-3 card_img" alt="...">
+                                                </a>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <img src="images/star.svg" class="img-fluid" />
+                                                            <p class="card_product_rating">4.5</p>
+                                                        </div>
+                                                        <div class="col-6 text-end">
+                                                            <p dir="rtl" lang="ar" class="card-title card_product_name">
+                                                                اسم
+                                                                المنتج
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p class="card_product_price">1,725 EGP</p>
+                                                        </div>
+                                                        <div class="col-6 d-flex justify-content-end">
+                                                            <p class="card_product_discount">20% OFF</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-3 px-2">
+                                                            <a class="btn btn-primary card_wish_list_btn" href="#">
+                                                                <img src="images/add_to_wish_list_heart.svg" class="" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-9 d-flex align-items-center">
+                                                            <a dir="rtl" lang="ar"
+                                                                class="btn btn-primary orange_button_white_text w-100"
+                                                                style="min-height: 39px; text-align: right;"
+                                                                href="#">اضافة
+                                                                للعربه</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4   ">
+                                            <div class="card w-auto card_style" style="max-width: 17rem;">
+                                                <a class="nav-link" href="#">
+                                                    <img src="images/product_img.svg"
+                                                        class="card-img-top img-fluid px-3 pt-3 card_img" alt="...">
+                                                </a>
+                                                <div class="card-body ">
+                                                    <div class="row ">
+                                                        <div class="col-6 ">
+                                                            <img src="images/star.svg" class="img-fluid " />
+                                                            <p class="card_product_rating">4.5</p>
+                                                        </div>
+                                                        <div class="col-6 text-end">
+                                                            <p dir="rtl" lang="ar" class="card-title card_product_name">
+                                                                اسم
+                                                                المنتج
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p class="card_product_price">1,725 EGP</p>
+                                                        </div>
+                                                        <div class="col-6 d-flex justify-content-end">
+                                                            <p class="card_product_discount">20% OFF</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-3 px-2">
+                                                            <a class="btn btn-primary card_wish_list_btn" href="#">
+                                                                <img src="images/add_to_wish_list_heart.svg" class="" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-9 d-flex align-items-center">
+                                                            <a dir="rtl" lang="ar"
+                                                                class="btn btn-primary orange_button_white_text w-100"
+                                                                style="min-height: 39px; text-align: right;"
+                                                                href="#">اضافة
+                                                                للعربه</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <div class="card w-auto card_style" style="max-width: 17rem;">
+                                                <a class="nav-link" href="#">
+                                                    <img src="images/product_img.svg"
+                                                        class="card-img-top img-fluid px-3 pt-3 card_img" alt="...">
+                                                </a>
+                                                <div class="card-body ">
+                                                    <div class="row ">
+                                                        <div class="col-6 ">
+                                                            <img src="images/star.svg" class="img-fluid " />
+                                                            <p class="card_product_rating">4.5</p>
+                                                        </div>
+                                                        <div class="col-6 text-end">
+                                                            <p dir="rtl" lang="ar" class="card-title card_product_name">
+                                                                اسم
+                                                                المنتج
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p class="card_product_price">1,725 EGP</p>
+                                                        </div>
+                                                        <div class="col-6 d-flex justify-content-end">
+                                                            <p class="card_product_discount">20% OFF</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-3 px-2">
+                                                            <a class="btn btn-primary card_wish_list_btn" href="#">
+                                                                <img src="images/add_to_wish_list_heart.svg" class="" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-9 d-flex align-items-center">
+                                                            <a dir="rtl" lang="ar"
+                                                                class="btn btn-primary orange_button_white_text w-100"
+                                                                style="min-height: 39px; text-align: right;"
+                                                                href="#">اضافة
+                                                                للعربه</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4  ">
+                                            <div class="card w-auto card_style" style="max-width: 17rem;">
+                                                <a class="nav-link" href="#">
+                                                    <img src="images/product_img.svg"
+                                                        class="card-img-top img-fluid px-3 pt-3 card_img" alt="...">
+                                                </a>
+                                                <div class="card-body ">
+                                                    <div class="row ">
+                                                        <div class="col-6 ">
+                                                            <img src="images/star.svg" class="img-fluid " />
+                                                            <p class="card_product_rating">4.5</p>
+                                                        </div>
+                                                        <div class="col-6 text-end">
+                                                            <p dir="rtl" lang="ar" class="card-title card_product_name">
+                                                                اسم
+                                                                المنتج
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <p class="card_product_price">1,725 EGP</p>
+                                                        </div>
+                                                        <div class="col-6 d-flex justify-content-end">
+                                                            <p class="card_product_discount">20% OFF</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-3 px-2">
+                                                            <a class="btn btn-primary card_wish_list_btn" href="#">
+                                                                <img src="images/add_to_wish_list_heart.svg" class="" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-9 d-flex align-items-center">
+                                                            <a dir="rtl" lang="ar"
+                                                                class="btn btn-primary orange_button_white_text w-100"
+                                                                style="min-height: 39px; text-align: right;"
+                                                                href="#">اضافة
+                                                                للعربه</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            
+
+                        </div>
 
 
+                    
+          
+                <div class="col-4 d-flex flex-column   align-items-start mt-2 mb-3 flash_sale_background">
+                    <div class="row justify-content-end  ">
+                        <div class="">
+                            <img src="images/ic_flash.svg" class="img-fluid float-end">
+                            <br />
+                            <p class="flash_sale_title">Flash Sale</p>
+                            <p dir="rtl" lang="ar" class="flash_sale_disc">
+                                احصل على العناصر المفضلة لديك هنا.
+                                <br />
+                                جميع العناصر مخفضة ومحدودة فقط.
+                                <br />
+                                احصل عليها بسرعة قبل بيعها!
+                            </p>
+                        </div>
+                        <p dir="rtl" lang="ar" class="flash_sale_time">الوقت المتبقي :</p>
+                        <div class="col-10 d-flex justify-content-end">
 
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="slider-container">
-                                <div class="row flex-nowrap mt-2 mb-2 mx-3 ">
-                                    <div class="col-4    ">
-                                        <div class="card w-auto card_style" style="max-width: 17rem;">
-                                            <a class="nav-link" href="#">
-                                                <img src="images/product_img.svg"
-                                                    class="card-img-top img-fluid px-3 pt-3 card_img" alt="...">
-                                            </a>
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <img src="images/star.svg" class="" />
-                                                        <p class="card_product_rating">4.5</p>
-                                                    </div>
-                                                    <div class="col-6 text-end">
-                                                        <p dir="rtl" lang="ar" class="card-title card_product_name">اسم
-                                                            المنتج
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="card_product_price">1,725 EGP</p>
-                                                    </div>
-                                                    <div class="col-6 d-flex justify-content-end">
-                                                        <p class="card_product_discount">20% OFF</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-3 px-2">
-                                                        <a class="btn btn-primary card_wish_list_btn" href="#">
-                                                            <img src="images/add_to_wish_list_heart.svg" class="" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-9 d-flex align-items-center">
-                                                        <a dir="rtl" lang="ar"
-                                                            class="btn btn-primary orange_button_white_text w-100"
-                                                            style="min-height: 39px; text-align: right;" href="#">اضافة
-                                                            للعربه</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4   ">
-                                        <div class="card w-auto card_style" style="max-width: 17rem;">
-                                            <a class="nav-link" href="#">
-                                                <img src="images/product_img.svg"
-                                                    class="card-img-top img-fluid px-3 pt-3 card_img" alt="...">
-                                            </a>
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <img src="images/star.svg" class="img-fluid" />
-                                                        <p class="card_product_rating">4.5</p>
-                                                    </div>
-                                                    <div class="col-6 text-end">
-                                                        <p dir="rtl" lang="ar" class="card-title card_product_name">اسم
-                                                            المنتج
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="card_product_price">1,725 EGP</p>
-                                                    </div>
-                                                    <div class="col-6 d-flex justify-content-end">
-                                                        <p class="card_product_discount">20% OFF</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-3 px-2">
-                                                        <a class="btn btn-primary card_wish_list_btn" href="#">
-                                                            <img src="images/add_to_wish_list_heart.svg" class="" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-9 d-flex align-items-center">
-                                                        <a dir="rtl" lang="ar"
-                                                            class="btn btn-primary orange_button_white_text w-100"
-                                                            style="min-height: 39px; text-align: right;" href="#">اضافة
-                                                            للعربه</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4   ">
-                                        <div class="card w-auto card_style" style="max-width: 17rem;">
-                                            <a class="nav-link" href="#">
-                                                <img src="images/product_img.svg"
-                                                    class="card-img-top img-fluid px-3 pt-3 card_img" alt="...">
-                                            </a>
-                                            <div class="card-body ">
-                                                <div class="row ">
-                                                    <div class="col-6 ">
-                                                        <img src="images/star.svg" class="img-fluid " />
-                                                        <p class="card_product_rating">4.5</p>
-                                                    </div>
-                                                    <div class="col-6 text-end">
-                                                        <p dir="rtl" lang="ar" class="card-title card_product_name">اسم
-                                                            المنتج
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="card_product_price">1,725 EGP</p>
-                                                    </div>
-                                                    <div class="col-6 d-flex justify-content-end">
-                                                        <p class="card_product_discount">20% OFF</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-3 px-2">
-                                                        <a class="btn btn-primary card_wish_list_btn" href="#">
-                                                            <img src="images/add_to_wish_list_heart.svg" class="" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-9 d-flex align-items-center">
-                                                        <a dir="rtl" lang="ar"
-                                                            class="btn btn-primary orange_button_white_text w-100"
-                                                            style="min-height: 39px; text-align: right;" href="#">اضافة
-                                                            للعربه</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4  ">
-                                        <div class="card w-auto card_style" style="max-width: 17rem;">
-                                            <a class="nav-link" href="#">
-                                                <img src="images/product_img.svg"
-                                                    class="card-img-top img-fluid px-3 pt-3 card_img" alt="...">
-                                            </a>
-                                            <div class="card-body ">
-                                                <div class="row ">
-                                                    <div class="col-6 ">
-                                                        <img src="images/star.svg" class="img-fluid " />
-                                                        <p class="card_product_rating">4.5</p>
-                                                    </div>
-                                                    <div class="col-6 text-end">
-                                                        <p dir="rtl" lang="ar" class="card-title card_product_name">اسم
-                                                            المنتج
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="card_product_price">1,725 EGP</p>
-                                                    </div>
-                                                    <div class="col-6 d-flex justify-content-end">
-                                                        <p class="card_product_discount">20% OFF</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-3 px-2">
-                                                        <a class="btn btn-primary card_wish_list_btn" href="#">
-                                                            <img src="images/add_to_wish_list_heart.svg" class="" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-9 d-flex align-items-center">
-                                                        <a dir="rtl" lang="ar"
-                                                            class="btn btn-primary orange_button_white_text w-100"
-                                                            style="min-height: 39px; text-align: right;" href="#">اضافة
-                                                            للعربه</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4  ">
-                                        <div class="card w-auto card_style" style="max-width: 17rem;">
-                                            <a class="nav-link" href="#">
-                                                <img src="images/product_img.svg"
-                                                    class="card-img-top img-fluid px-3 pt-3 card_img" alt="...">
-                                            </a>
-                                            <div class="card-body ">
-                                                <div class="row ">
-                                                    <div class="col-6 ">
-                                                        <img src="images/star.svg" class="img-fluid " />
-                                                        <p class="card_product_rating">4.5</p>
-                                                    </div>
-                                                    <div class="col-6 text-end">
-                                                        <p dir="rtl" lang="ar" class="card-title card_product_name">اسم
-                                                            المنتج
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="card_product_price">1,725 EGP</p>
-                                                    </div>
-                                                    <div class="col-6 d-flex justify-content-end">
-                                                        <p class="card_product_discount">20% OFF</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-3 px-2">
-                                                        <a class="btn btn-primary card_wish_list_btn" href="#">
-                                                            <img src="images/add_to_wish_list_heart.svg" class="" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-9 d-flex align-items-center">
-                                                        <a dir="rtl" lang="ar"
-                                                            class="btn btn-primary orange_button_white_text w-100"
-                                                            style="min-height: 39px; text-align: right;" href="#">اضافة
-                                                            للعربه</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="row flex-nowrap justify-content-end">
 
+                                <div class="col-2 flas_sale_time_left">
+                                    <p class="mt-2">01</p>
+                                </div>
+                                <div class="col-1">
+                                    <p>:</p>
+                                </div>
+                                <div class="col-2 flas_sale_time_left">
+                                    <p class="mt-2">34</p>
+                                </div>
+                                <div class="col-1">
+                                    <p>:</p>
+                                </div>
+                                <div class="col-2 flas_sale_time_left me-3">
+                                    <p class="mt-2">50</p>
                                 </div>
                             </div>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="col-4 d-flex flex-column  align-items-start mt-2">
-                <div class="row justify-content-end flash_sale_background">
-                    <div>
-                        <img src="images/ic_flash.svg" class="img-fluid float-end">
-                        <br />
-                        <p class="flash_sale_title">Flash Sale</p>
-                        <p dir="rtl" lang="ar" class="flash_sale_disc">
-                            احصل على العناصر المفضلة لديك هنا.
-                            <br />
-                            جميع العناصر مخفضة ومحدودة فقط.
-                            <br />
-                            احصل عليها بسرعة قبل بيعها!
-                        </p>
-                    </div>
-                    <p dir="rtl" lang="ar" class="flash_sale_time">الوقت المتبقي :</p>
-                    <div class="col-10 d-flex justify-content-end">
-
-                        <div class="row flex-nowrap justify-content-end">
-
-                            <div class="col-2 flas_sale_time_left">
-                                <p class="mt-2">01</p>
-                            </div>
-                            <div class="col-1">
-                                <p>:</p>
-                            </div>
-                            <div class="col-2 flas_sale_time_left">
-                                <p class="mt-2">34</p>
-                            </div>
-                            <div class="col-1">
-                                <p>:</p>
-                            </div>
-                            <div class="col-2 flas_sale_time_left me-3">
-                                <p class="mt-2">50</p>
-                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row ">
-                    <a align="right" dir="rtl" lang="ar" class="btn btn-primary blue_button w-100 mt-2 "
-                        style="text-wrap: no;" href="#">
-                        انقر هنا للاستمرار
-                        <img align="left" src="images/arrow_left.svg" class="img-fluid p-1" />
-                    </a>
+                    <div class="row mx-0  align-self-end">
+                        <a align="right" dir="rtl" lang="ar" class="btn btn-primary blue_button w-100 mt-2 "
+                            style="text-wrap: no;" href="#">
+                            انقر هنا للاستمرار
+                            <img align="left" src="images/arrow_left.svg" class="img-fluid p-1" />
+                        </a>
+                    </div>
                 </div>
             </div>
+
         </div>
 
 
 
         <div class="row margin_top_100 justify-content-center">
 
-            <div class="carousel slide" data-bs-interval="false">
-                <div class="d-flex justify-content-between">
-
-                    <div class="d-flex">
-
-                        <button class=" carousel_arrow  prev-btn">
-                            <span class="carousel-control-prev-icon "></span>
-
-                        </button>
-                        <button class=" carousel_arrow next-btn active mx-5 ">
-                            <span class="carousel-control-next-icon "></span>
-
-                        </button>
-                    </div>
-                    <p class="titles" dir="rtl" lang="ar">الأحذية والملابس</p>
+            <div class=" d-flex justify-content-between px-5">
+                <div class="d-flex  ">
+                    <button  class="prev-btn"><i class="fas fa-arrow-left"></i></button>
+                    <button  class="active next-btn active mx-4"><i class="fas fa-arrow-right"></i></button>
+        
                 </div>
+                <p class="titles" dir="rtl" lang="ar">الأحذية والملابس</p>
+            </div>
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+           
                         <div class="slider-container">
-                            <div class="row flex-nowrap mt-2 mb-2 mx-3 ">
-                                <div class="col-4  ">
+                            <div class="row flex-nowrap justify-content-between mt-2 mb-2 mx-3 ">
+                                <div class="col-4    ">
                                     <div class="card w-auto card_style" style="max-width: 17rem;">
                                         <a class="nav-link" href="#">
                                             <img src="images/product_img.svg"
@@ -713,7 +718,8 @@
                                                     <p class="card_product_rating">4.5</p>
                                                 </div>
                                                 <div class="col-6 text-end">
-                                                    <p dir="rtl" lang="ar" class="card-title card_product_name">اسم
+                                                    <p dir="rtl" lang="ar" class="card-title card_product_name">
+                                                        اسم
                                                         المنتج
                                                     </p>
                                                 </div>
@@ -735,7 +741,8 @@
                                                 <div class="col-9 d-flex align-items-center">
                                                     <a dir="rtl" lang="ar"
                                                         class="btn btn-primary orange_button_white_text w-100"
-                                                        style="min-height: 39px; text-align: right;" href="#">اضافة
+                                                        style="min-height: 39px; text-align: right;"
+                                                        href="#">اضافة
                                                         للعربه</a>
                                                 </div>
                                             </div>
@@ -755,7 +762,8 @@
                                                     <p class="card_product_rating">4.5</p>
                                                 </div>
                                                 <div class="col-6 text-end">
-                                                    <p dir="rtl" lang="ar" class="card-title card_product_name">اسم
+                                                    <p dir="rtl" lang="ar" class="card-title card_product_name">
+                                                        اسم
                                                         المنتج
                                                     </p>
                                                 </div>
@@ -777,7 +785,8 @@
                                                 <div class="col-9 d-flex align-items-center">
                                                     <a dir="rtl" lang="ar"
                                                         class="btn btn-primary orange_button_white_text w-100"
-                                                        style="min-height: 39px; text-align: right;" href="#">اضافة
+                                                        style="min-height: 39px; text-align: right;"
+                                                        href="#">اضافة
                                                         للعربه</a>
                                                 </div>
                                             </div>
@@ -797,7 +806,8 @@
                                                     <p class="card_product_rating">4.5</p>
                                                 </div>
                                                 <div class="col-6 text-end">
-                                                    <p dir="rtl" lang="ar" class="card-title card_product_name">اسم
+                                                    <p dir="rtl" lang="ar" class="card-title card_product_name">
+                                                        اسم
                                                         المنتج
                                                     </p>
                                                 </div>
@@ -819,49 +829,8 @@
                                                 <div class="col-9 d-flex align-items-center">
                                                     <a dir="rtl" lang="ar"
                                                         class="btn btn-primary orange_button_white_text w-100"
-                                                        style="min-height: 39px; text-align: right;" href="#">اضافة
-                                                        للعربه</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 ">
-                                    <div class="card w-auto card_style" style="max-width: 17rem;">
-                                        <a class="nav-link" href="#">
-                                            <img src="images/product_img.svg"
-                                                class="card-img-top img-fluid px-3 pt-3 card_img" alt="...">
-                                        </a>
-                                        <div class="card-body ">
-                                            <div class="row ">
-                                                <div class="col-6 ">
-                                                    <img src="images/star.svg" class="img-fluid " />
-                                                    <p class="card_product_rating">4.5</p>
-                                                </div>
-                                                <div class="col-6 text-end">
-                                                    <p dir="rtl" lang="ar" class="card-title card_product_name">اسم
-                                                        المنتج
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <p class="card_product_price">1,725 EGP</p>
-                                                </div>
-                                                <div class="col-6 d-flex justify-content-end">
-                                                    <p class="card_product_discount">20% OFF</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-3 px-2">
-                                                    <a class="btn btn-primary card_wish_list_btn" href="#">
-                                                        <img src="images/add_to_wish_list_heart.svg" class="" />
-                                                    </a>
-                                                </div>
-                                                <div class="col-9 d-flex align-items-center">
-                                                    <a dir="rtl" lang="ar"
-                                                        class="btn btn-primary orange_button_white_text w-100"
-                                                        style="min-height: 39px; text-align: right;" href="#">اضافة
+                                                        style="min-height: 39px; text-align: right;"
+                                                        href="#">اضافة
                                                         للعربه</a>
                                                 </div>
                                             </div>
@@ -881,7 +850,8 @@
                                                     <p class="card_product_rating">4.5</p>
                                                 </div>
                                                 <div class="col-6 text-end">
-                                                    <p dir="rtl" lang="ar" class="card-title card_product_name">اسم
+                                                    <p dir="rtl" lang="ar" class="card-title card_product_name">
+                                                        اسم
                                                         المنتج
                                                     </p>
                                                 </div>
@@ -903,7 +873,52 @@
                                                 <div class="col-9 d-flex align-items-center">
                                                     <a dir="rtl" lang="ar"
                                                         class="btn btn-primary orange_button_white_text w-100"
-                                                        style="min-height: 39px; text-align: right;" href="#">اضافة
+                                                        style="min-height: 39px; text-align: right;"
+                                                        href="#">اضافة
+                                                        للعربه</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4  ">
+                                    <div class="card w-auto card_style" style="max-width: 17rem;">
+                                        <a class="nav-link" href="#">
+                                            <img src="images/product_img.svg"
+                                                class="card-img-top img-fluid px-3 pt-3 card_img" alt="...">
+                                        </a>
+                                        <div class="card-body ">
+                                            <div class="row ">
+                                                <div class="col-6 ">
+                                                    <img src="images/star.svg" class="img-fluid " />
+                                                    <p class="card_product_rating">4.5</p>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <p dir="rtl" lang="ar" class="card-title card_product_name">
+                                                        اسم
+                                                        المنتج
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card_product_price">1,725 EGP</p>
+                                                </div>
+                                                <div class="col-6 d-flex justify-content-end">
+                                                    <p class="card_product_discount">20% OFF</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-3 px-2">
+                                                    <a class="btn btn-primary card_wish_list_btn" href="#">
+                                                        <img src="images/add_to_wish_list_heart.svg" class="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-9 d-flex align-items-center">
+                                                    <a dir="rtl" lang="ar"
+                                                        class="btn btn-primary orange_button_white_text w-100"
+                                                        style="min-height: 39px; text-align: right;"
+                                                        href="#">اضافة
                                                         للعربه</a>
                                                 </div>
                                             </div>
@@ -914,9 +929,7 @@
                             </div>
                         </div>
 
-                    </div>
-
-                </div>
+                  
 
 
             </div>
@@ -977,24 +990,16 @@
         <div class="row margin_top_100 justify-content-center">
 
             <div class="carousel slide" data-bs-interval="false">
-                <div class="d-flex justify-content-between">
-
-                    <div class="d-flex">
-
-                        <button class=" carousel_arrow  prev-btn">
-                            <span class="carousel-control-prev-icon "></span>
-
-                        </button>
-                        <button class=" carousel_arrow next-btn active mx-5 ">
-                            <span class="carousel-control-next-icon "></span>
-
-                        </button>
+                <div class=" d-flex justify-content-between px-5">
+                    <div class="d-flex  ">
+                        <button  class="prev-btn"><i class="fas fa-arrow-left"></i></button>
+                        <button  class="active next-btn active mx-4"><i class="fas fa-arrow-right"></i></button>
+            
                     </div>
                     <p class="titles" dir="rtl" lang="ar">الأحذية والملابس</p>
                 </div>
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+
                         <div class="slider-container">
                             <div class="row flex-nowrap mt-2 mb-2 mx-3 ">
                                 <div class="col-4  ">
@@ -1210,10 +1215,6 @@
 
                             </div>
                         </div>
-
-                    </div>
-
-                </div>
 
 
             </div>
@@ -1423,7 +1424,9 @@
                 <div class="col-4 d-flex">
                     <div class="col-12 d-flex  flex-column align-items-end mt-2">
                         <img align="right" src="images/footer_logo.svg" class="img-fluid mx-0" />
-                        <p class="footer_text mt-3">Lorem ipsum dolor sit amet consectetur. Aliquet vitae quam nunc pellentesque quis eget lacinia libero. Ipsum consectetur tellus tortor feugiat egestas egestas augue.</p>
+                        <p class="footer_text mt-3">Lorem ipsum dolor sit amet consectetur. Aliquet vitae quam nunc
+                            pellentesque quis eget lacinia libero. Ipsum consectetur tellus tortor feugiat egestas
+                            egestas augue.</p>
                         <div align="right" class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle language_button" type="button"
                                 id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true"
@@ -1447,10 +1450,12 @@
             </div>
         </div>
     </div>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="slider.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -1,10 +1,14 @@
-﻿
+﻿body{
+    box-sizing: border-box;
+    font-family: "Noto Sans Arabic", Cairo;
+  }
 
 #header {
     background-color: #2DB2D4;
     height: auto;
     min-height: 2.8125rem;
     z-index: 1;
+    
 }
 
 /*.categories:hover {
@@ -14,7 +18,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    font-family: IBM Plex Sans Arabic;
+
     font-size: 0.75rem;
     font-weight: 400;
     color: #52525B;
@@ -66,8 +70,9 @@
     background-color: #FAFAFA;
     border-radius: 5px 0px 0px 5px;
     border: none;
-    height: 1.875rem;
+    height: 2.5rem;
     max-width: 100%;
+    line-height: 2.5rem;
     padding: 0px;
     display: inline;
     z-index: 1;
@@ -75,8 +80,8 @@
 
 #search_bar_img {
     position: absolute;
-    margin-left: 0.3125rem;
-    margin-top: 0.1875rem;
+    margin-left: 1.3125rem;
+    margin-top: .5rem;
     display: inline;
     z-index: 1;
 }
@@ -84,14 +89,15 @@
 .arrow_down {
     background-color: #F49B57;
     border-radius: 0px 5px 5px 0px;
-    height: 1.875rem;
+    height: 2.5rem;
+    width: 8rem;
+    line-height: 2.5rem;
     text-decoration: none;
-    z-index: 1;
 }
 
 #arrow_down_label {
 
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 400;
     display: inline;
     color: white;
@@ -99,7 +105,7 @@
 }
 
 #menu {
-    font-family: IBM Plex Sans Arabic;
+
     font-size: 1rem;
     font-weight: 400;
     color: #A1A1AA;
@@ -108,21 +114,26 @@
 }
 
 .advertisement {
-    max-height: 14.375rem;
-    max-width: 38.125rem;
+    max-height: 40.375rem;
+    max-width: 55.125rem;;
     z-index: 1;
 }
 
 #place_holder_1 {
+    max-height: 40.375rem;
+    max-width: 55.125rem;
     background-color: #BFBEFF4D;
     border-radius: 0px 40px 40px 0px;
-    max-height: 14.375rem;
+
     z-index: 1;
+
 }
 #place_holder_2 {
+    max-height: 40.375rem;
+    max-width: 55.125rem;
     background-color: #FFD6BE4D;
     border-radius: 40px 0px 0px 40px;
-    max-height: 14.375rem;
+ 
     z-index: 1;
 }
 
@@ -134,7 +145,7 @@
 }
 
 .titles {
-    font-family: IBM Plex Sans Arabic;
+    
     font-size: 1.5625rem;
     font-weight: 400;
     color: #52525B;
@@ -149,7 +160,7 @@
 }
 
 #about_us {
-    font-family: IBM Plex Sans Arabic;
+ 
     font-size: 1.25rem;
     font-weight: 400;
     color: #121212;
@@ -157,7 +168,7 @@
 }
 
 #about_us_titles {
-    font-family: IBM Plex Sans Arabic;
+
     font-size: 1.125rem;
     font-weight: 400;
     color: #52525B;
@@ -171,7 +182,7 @@
 }
 
 #about_us_description {
-    font-family: Lato;
+
     font-size: 1rem;
     font-weight: 400;
     color: #636363;
@@ -192,7 +203,7 @@
 
 .orange_button_white_text {
     background-color: #F49B57 !important;
-    font-family: Inter;
+
     font-size: 0.875rem;
     font-weight: 400;
     text-wrap: nowrap;
@@ -202,7 +213,7 @@
 
 #exampleFormControlInput1.form-control::placeholder {
     color: white;
-    font-family: Inter;
+    
     font-size: 0.875rem;
     font-weight: 400;
     text-wrap: nowrap;
@@ -211,7 +222,7 @@
 .submit {
     background-color: #FFFFFF;
     border-color: #FFFFFF !important;
-    font-family: Inter;
+ 
     font-size: 0.875rem;
     font-weight: 400;
     text-wrap: nowrap;
@@ -220,7 +231,7 @@
 
 #subscribe_to_get_updated {
     color: white;
-    font-family: Inter;
+
     font-size: 1.25rem;
     font-weight: 600;
     text-wrap: nowrap;
@@ -247,7 +258,7 @@
     }
 
         .footer_list li a {
-            font-family: IBM Plex Sans Arabic;
+           
             text-wrap: nowrap;
             text-align: right;
             font-size: 0.75rem;
@@ -265,7 +276,7 @@
 .language_button {
     background: #164E63;
     border-color: #164E63;
-    font-family: IBM Plex Sans Arabic;
+
     text-wrap: nowrap;
     text-align: right;
     font-size: 0.75rem;
@@ -274,7 +285,7 @@
 }
 
 .inter_white_14 {
-    font-family: Inter;
+
     text-wrap: nowrap;
     text-align: right;
     font-size: 0.875rem;
@@ -296,7 +307,7 @@
 }
 
     .contact_us_form label {
-        font-family: IBM Plex Sans Arabic;
+ 
         text-wrap: nowrap;
         text-align: right !important;
         font-size: 0.75rem;
@@ -314,7 +325,7 @@
 
 
 .card_product_name {
-    font-family: IBM Plex Sans Arabic;
+   
     text-wrap: nowrap;
     font-size: 1rem;
     font-weight: 600;
@@ -322,7 +333,7 @@
 }
 
 .card_product_rating {
-    font-family: IBM Plex Sans Arabic;
+    
     text-wrap: nowrap;
     font-size: 0.75rem;
     font-weight: 400;
@@ -380,8 +391,8 @@
 .carousel-indicators li {
     text-indent: 0;
     margin: 0.125rem;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1rem;
+    height: 1rem;
     border: none;
     border-radius: 100%;
     line-height: 6.25rem;
@@ -427,7 +438,7 @@
 .blue_button {
     background: #2DB2D4;
     border-color: #2DB2D4;
-    font-family: IBM Plex Sans Arabic;
+    
     text-wrap: nowrap;
     font-size: 1.125rem;
     font-weight: 500;
@@ -437,7 +448,7 @@
 }
 
 .grey_area_text_1 {
-    font-family: IBM Plex Sans Arabic;
+    
     text-wrap: nowrap;
     font-size: 1.25rem;
     font-weight: 600;
@@ -445,7 +456,7 @@
 }
 
 .grey_area_text_2 {
-    font-family: IBM Plex Sans Arabic;
+    
     text-wrap: wrap;
     font-size: 3.75rem;
     font-weight: 600;
@@ -472,7 +483,7 @@
 }
 
 .available_size_text {
-    font-family: IBM Plex Sans Arabic;
+    
     text-wrap: nowrap;
     font-size: 1.5rem;
     font-weight: 700;
@@ -508,7 +519,7 @@
 }
 
 .explore_section_text {
-    font-family: IBM Plex Sans Arabic;
+    
     text-wrap: nowrap;
     font-size: 1.5rem;
     font-weight: 700;
@@ -519,7 +530,7 @@
 }
 
 .explore_section_price {
-    font-family: IBM Plex Sans Arabic;
+    
     text-wrap: nowrap;
     font-size: 2.25rem;
     font-weight: 600;
@@ -531,6 +542,7 @@
 
 .flash_sale {
     /* background: #F9FAFB; */
+    background-color: #fff;
 }
 
 .flash_sale .flash-sale-arrow{
@@ -564,7 +576,7 @@
 
 .notification_name {
     display: inline;
-    font-family: Inter;
+    
     text-wrap: nowrap;
     font-size: 1rem;
     font-weight: 500;
@@ -573,7 +585,7 @@
 
 .notification_disc {
     display: inline;
-    font-family: Inter;
+    
     text-wrap: nowrap;
     font-size: 0.875rem;
     font-weight: 400;
@@ -585,7 +597,7 @@
 }
 
 .notification {
-    font-family: IBM Plex Sans Arabic;
+    
     text-wrap: nowrap;
     font-size: 1.125rem;
     font-weight: 600;
@@ -595,7 +607,7 @@
 }
 
 .notification_status {
-    font-family: IBM Plex Sans Arabic;
+    
     text-wrap: nowrap;
     font-size: 0.875rem;
     font-weight: 400;
@@ -620,7 +632,7 @@
 }
 
 .header_dropdown_text {
-    font-family: IBM Plex Sans Arabic;
+    
     text-wrap: nowrap;
     font-size: 0.875rem;
     font-weight: 400;
@@ -630,8 +642,12 @@
 }
 
 .flash_sale_background {
-    background-color: #ABDBE7;
+    /* background-color: #ABDBE7; */
     background: rgba(171, 219, 231, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+   
+
 }
 
 .flash_sale_title {
@@ -644,7 +660,7 @@
 }
 
 .flash_sale_disc {
-    font-family: IBM Plex Sans Arabic;
+    
     text-wrap: nowrap;
     font-size: 0.875rem;
     font-weight: 400;
@@ -653,7 +669,7 @@
 }
 
 .flash_sale_time {
-    font-family: IBM Plex Sans Arabic;
+    
     text-wrap: nowrap;
     font-size: 0.75rem;
     font-weight: 400;
@@ -674,7 +690,7 @@
 }
 
 .footer_text {
-    font-family: Inter;
+    
     font-size: 0.75rem;
     font-weight: 400;
     color: white;
@@ -694,7 +710,7 @@
 }
 
 .about_us_dynamic_text {
-    font-family: IBM Plex Sans Arabic;
+    
     font-size: 1rem;
     font-weight: 400;
     color: #121212;
@@ -702,7 +718,7 @@
 }
 
 .complain_text_1 {
-    font-family: IBM Plex Sans Arabic;
+    
     font-size: 1rem;
     font-weight: 700;
     color: #A1A1AA;
@@ -710,7 +726,7 @@
 }
 
 .complain_text_2 {
-    font-family: IBM Plex Sans Arabic;
+    
     font-size: 2.25rem;
     font-weight: 700;
     color: #2DB2D4;
@@ -718,7 +734,7 @@
 }
 
 .complain_text_3 {
-    font-family: IBM Plex Sans Arabic;
+    
     font-size: 1.125rem;
     font-weight: 500;
     color: #52525B;
@@ -726,7 +742,7 @@
 }
 
 .complain_text_4 {
-    font-family: IBM Plex Sans Arabic;
+    
     font-size: 0.875rem;
     font-weight: 400;
     color: #A1A1AA;
@@ -734,7 +750,7 @@
 }
 
 .complain_text_5 {
-    font-family: IBM Plex Sans Arabic;
+    
     font-size: 1.125rem;
     font-weight: 500;
     color: #52525B;
@@ -800,6 +816,7 @@
 
 .slider-container {
     display: flex;
+    justify-content: space-around;
     overflow-x: auto;
 }
 
@@ -809,12 +826,13 @@
 
 .prev-btn,
 .next-btn {
+    border: none;
     background-color: gray;
     border-radius: 5px;
-    border: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 12px;
     cursor: pointer;
-    z-index: 1;
-
 }
 
 .prev-btn.active,
@@ -840,18 +858,63 @@
 
 
 @media (max-width: 576px) {
-  body::before {
+ html{
+    width: 106%;
+ }
+ 
+    /* body::before {
     content: "xs";
-  }
+  } */
 
 
 
   #header{
-    display: none;
+   display: none;
+   
   }
   .advertisement{
-        max-width: 15.125rem;
+        max-width: 20rem;
   }
+
+  .d-flex.flash_sale_sections{
+    flex-direction: column-reverse;
+    align-items: center;
+    
+}
+
+.flash_sale_sections .col-4.d-flex.flex-column{
+    width: 100% ;
+    align-items:start;
+
+
+}
+
+.flash_sale_sections .col-8{
+    width: 100%;
+   
+
+}
+#slider_1{
+    display: flex;
+}
+#slider_2{
+    display: none;
+}
+
+.prev-btn,
+.next-btn{
+    background-color: rebeccapurple;
+    padding: 10px;
+}
+
+
+.slider-container {
+  
+    justify-content: start;
+
+}
+
+
   .explore_section .row {
 
     top: -120px;
@@ -867,34 +930,34 @@
 
 }
 @media (min-width: 576px) {
-  body::before {
+  /* body::before {
     content: "SM";
-  }
+  } */
 
 }
 
 @media (min-width: 768px) {
-  body::before {
+  /* body::before {
     content: "MD";
-  }
+  } */
 }
 
 @media (min-width: 992px) {
-  body::before {
+  /* body::before {
     content: "LG";
-  }
+  } */
 }
 
 @media (min-width: 1200px) {
-  body::before {
+  /* body::before {
     content: "XL";
-  }
+  } */
 }
 
 @media (min-width: 1400px) {
-  body::before {
+  /* body::before {
     content: "XXL";
-  }
+  } */
 }
 
 
