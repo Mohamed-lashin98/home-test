@@ -869,9 +869,9 @@
 @media (max-width: 576px) {
 
  
-    body::before {
+    /* body::before {
     content: "xs";
-  }
+  } */
 
 body{
     width: 100%;
