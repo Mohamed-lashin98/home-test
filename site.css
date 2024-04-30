@@ -1,12 +1,13 @@
 ﻿body{
     box-sizing: border-box;
     font-family: "Noto Sans Arabic", Cairo;
+    width: 100%;
   }
 
 #header {
     background-color: #2DB2D4;
     height: auto;
-    min-height: 2.8125rem;
+       font-size: 22px;
     z-index: 1;
     
 }
@@ -97,7 +98,7 @@
 
 #arrow_down_label {
 
-    font-size: 2vw;
+    font-size: 22px;
     font-weight: 400;
     display: inline;
     color: white;
@@ -140,7 +141,7 @@
 
 
 .about_us_section{
-
+    max-width: 100%;
 
 }
 
@@ -191,6 +192,7 @@
 
 #footer {
     background: linear-gradient(180deg, #269ab7 20%, #2DB2D4 20%);
+    margin-left: 0;
 }
 
 #subscribe {
@@ -271,6 +273,7 @@
     background: #FFF7ED;
     /* height: 25rem; */
     padding: 0px;
+    margin-left: 0;
 }
 
 .language_button {
@@ -299,6 +302,7 @@
 
 #contact_us {
     background: linear-gradient(180deg, #FFF7ED 50%, #EAF8FB 50%);
+    margin-left: 0;
 }
 
 .contact_us_form {
@@ -706,7 +710,7 @@
 }
 
 .margin_top_100 {
-    margin-top: 6.25rem;
+    margin-top: 3.25rem;
 }
 
 .about_us_dynamic_text {
@@ -804,7 +808,7 @@
 }
 
 .screen_width {
-    max-width: 1920px;
+    max-width: 100%;
 }
 
 .no-paddding{
@@ -813,8 +817,12 @@
     padding-right: 0;
 
 }
+#slider_btn_2{
+    margin-left: 25px;
+}
 
 .slider-container {
+    max-width: 100%;
     display: flex;
     justify-content: space-around;
     overflow-x: auto;
@@ -858,20 +866,34 @@
 
 
 @media (max-width: 576px) {
- html{
-    width: 106%;
- }
+
  
-    /* body::before {
+    body::before {
     content: "xs";
-  } */
+  }
 
-
+body{
+    width: 100%;
+}
 
   #header{
    display: none;
    
   }
+
+  #menu{
+    font-size: .8rem;
+  }
+
+  #logo{
+    max-width: 7rem;
+  }
+
+.search-bar-setion{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
   .advertisement{
         max-width: 20rem;
   }
@@ -894,12 +916,16 @@
    
 
 }
-#slider_1{
-    display: flex;
+#slider_btn_1{
+    visibility:visible;
+
 }
-#slider_2{
-    display: none;
+#slider_btn_2{
+visibility: hidden;
+margin-right: 20px;
 }
+
+
 
 .prev-btn,
 .next-btn{
@@ -930,34 +956,34 @@
 
 }
 @media (min-width: 576px) {
-  /* body::before {
+  body::before {
     content: "SM";
-  } */
+  }
 
 }
 
 @media (min-width: 768px) {
-  /* body::before {
+  body::before {
     content: "MD";
-  } */
+  }
 }
 
 @media (min-width: 992px) {
-  /* body::before {
+  body::before {
     content: "LG";
-  } */
+  }
 }
 
 @media (min-width: 1200px) {
-  /* body::before {
+  body::before {
     content: "XL";
-  } */
+  }
 }
 
 @media (min-width: 1400px) {
-  /* body::before {
+  body::before {
     content: "XXL";
-  } */
+  }
 }
 
 
