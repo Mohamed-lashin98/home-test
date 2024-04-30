@@ -91,14 +91,14 @@
     background-color: #F49B57;
     border-radius: 0px 5px 5px 0px;
     height: 2.5rem;
-    width: 8rem;
+    width: 9rem;
     line-height: 2.5rem;
     text-decoration: none;
 }
 
 #arrow_down_label {
 
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 400;
     display: inline;
     color: white;
@@ -147,7 +147,7 @@
 
 .titles {
     
-    font-size: 1.5625rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: #52525B;
     margin-right: 2.1875rem;
@@ -822,6 +822,7 @@
 }
 
 .slider-container {
+    padding: 0;
     max-width: 100%;
     display: flex;
     justify-content: space-around;
@@ -929,7 +930,7 @@ margin-right: 20px;
 
 .prev-btn,
 .next-btn{
-    background-color: rebeccapurple;
+    
     padding: 10px;
 }
 
