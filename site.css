@@ -956,34 +956,34 @@ margin-right: 20px;
 
 }
 @media (min-width: 576px) {
-  body::before {
+  /* body::before {
     content: "SM";
-  }
+  } */
 
 }
 
 @media (min-width: 768px) {
-  body::before {
+  /* body::before {
     content: "MD";
-  }
+  } */
 }
 
 @media (min-width: 992px) {
-  body::before {
+  /* body::before {
     content: "LG";
-  }
+  } */
 }
 
 @media (min-width: 1200px) {
-  body::before {
+  /* body::before {
     content: "XL";
-  }
+  } */
 }
 
 @media (min-width: 1400px) {
-  body::before {
+  /* body::before {
     content: "XXL";
-  }
+  } */
 }
 
 
